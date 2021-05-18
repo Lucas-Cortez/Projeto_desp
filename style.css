@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(136, 205, 226);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+nav {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.link_nav {
+  height: 60px;
+  display: inline;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.link_nav a:hover {
+  color: rgb(220, 229, 233);
+}
+
+header a {
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: rgb(255, 255, 255);
+}
+
+body#home_container #home,
+body#who_container #who,
+body#login_container #login {
+  background-color: rgb(170, 210, 223);
+}
+
+main {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 480px;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+main h2 {
+  margin: 20px 0;
+  font: 40px "Montserrat", sans-serif;
+}
+
+form {
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+input,
+select {
+  /* border: 1px solid ; */
+  height: 40px;
+  width: 100%;
+  margin: 5px 0;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid rgb(239, 199, 94);
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.values {
+  width: 33%;
+}
+
+td {
+  overflow: hidden;
+  max-width: 192px;
+  padding: 15px 15px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+
+table {
+  max-width: 768px;
+}
+
+thead {
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+button {
+  background-color: rgb(239, 199, 94);
+  height: 35px;
+  width: 40px;
+  border-style: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(239, 198, 94, 0.85);
+}
+
+button:active {
+  background-color: rgb(212, 172, 71);
+}
+
+td button img {
+  filter: invert(100%);
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+td button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 98, 98);
+}
+
+td button:hover {
+  background-color: rgba(255, 98, 98, 0.85);
+}
+
+td button:active {
+  background-color: rgb(230, 70, 70);
+}
+
+#esquerda {
+  transform: scaleX(-1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.side_navbar,
+#expense_type {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}

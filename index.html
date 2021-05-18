@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body id="home_container">
+    <header>
+      <img
+        src="images/coin-svgrepo-com.svg"
+        alt="coin_logo"
+        width="80"
+        height="80"
+      />
+      <nav>
+        <div class="link_nav" id="home">
+          <a href="#">Home</a>
+        </div>
+        <div class="link_nav" id="who">
+          <a href="#">Quem Somos</a>
+        </div>
+        <div class="link_nav" id="login">
+          <a href="#">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Consulta de despesas</h2>
+
+      <form id="form">
+        <div class="row">
+          <div class="side_navbar">
+            <input
+              type="number"
+              class="values"
+              name="year"
+              id="year"
+              min="2000"
+              max="2021"
+              placeholder="Ano"
+            />
+            <input
+              type="number"
+              class="values"
+              name="month"
+              id="month"
+              min="1"
+              max="12"
+              placeholder="Mês"
+            />
+            <input
+              type="number"
+              class="values"
+              name="day"
+              id="day"
+              min="1"
+              max="31"
+              placeholder="Dia"
+            />
+          </div>
+
+          <select name="expense_type" id="expense_type">
+            <option value="" disabled selected>Tipo</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Educação">Educação</option>
+            <option value="Lazer">Lazer</option>
+            <option value="Banco">Banco</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="side_navbar">
+            <input
+              type="text"
+              name="description"
+              id="description"
+              placeholder="Descrição"
+            />
+          </div>
+
+          <div class="row side_navbar">
+            <input
+              type="number"
+              name="value"
+              id="value"
+              placeholder="Valor"
+              step="any"
+            />
+            <button type="submit">
+              <img
+                id="esquerda"
+                src="images\lupa-top-mobile.svg"
+                width="15"
+                height="15"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <table id="myTable">
+        <thead>
+          <td>Data</td>
+          <td>Tipo</td>
+          <td>Descrição</td>
+          <td colspan="2">Valor</td>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+     
+    <script src="create_expense.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
